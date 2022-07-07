@@ -31,3 +31,20 @@
     }
   }
 }
+
+@media (max-width: 740px) {
+  .about {
+    .members-list {
+      display: block;
+    }
+    .member-item {
+      width: 100%;
+      margin-top: 40px;
+      img {
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

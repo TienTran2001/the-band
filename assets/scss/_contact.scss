@@ -43,3 +43,18 @@
     }
   }
 }
+
+@media (max-width: 740px) {
+  .contact {
+    &-content {
+      display: block;
+    }
+    .contact-info,
+    .contact-form {
+      width: 100%;
+    }
+    .contact-form {
+      margin-top: 30px;
+    }
+  }
+}

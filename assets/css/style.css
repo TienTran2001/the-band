@@ -182,7 +182,8 @@ html {
     z-index: 10;
     position: absolute;
     right: 10px;
-    top: 20px;
+    top: 6px;
+    padding: 15px 5px;
   }
 
   .open .navbar-icon {
@@ -326,6 +327,20 @@ html {
   object-fit: cover;
 }
 
+@media (max-width: 740px) {
+  .about .members-list {
+    display: block;
+  }
+  .about .member-item {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .about .member-item img {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+  }
+}
 .tour {
   background-color: #000;
   padding-bottom: 115px;
@@ -406,6 +421,18 @@ html {
   margin-top: 15px;
 }
 
+@media (max-width: 740px) {
+  .tour .places-list {
+    display: block;
+  }
+  .tour .place-item {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .tour .place-image img {
+    height: 300px;
+  }
+}
 .contact {
   padding-bottom: 115px;
 }
@@ -448,6 +475,18 @@ html {
   float: right;
 }
 
+@media (max-width: 740px) {
+  .contact-content {
+    display: block;
+  }
+  .contact .contact-info,
+.contact .contact-form {
+    width: 100%;
+  }
+  .contact .contact-form {
+    margin-top: 30px;
+  }
+}
 .footer {
   padding: 70px 0 79px;
 }

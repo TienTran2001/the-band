@@ -83,3 +83,18 @@
     }
   }
 }
+
+@media (max-width: 740px) {
+  .tour {
+    .places-list {
+      display: block;
+    }
+    .place-item {
+      margin-top: 40px;
+      width: 100%;
+    }
+    .place-image img {
+      height: 300px;
+    }
+  }
+}
