@@ -1,0 +1,85 @@
+.tour {
+  background-color: #000;
+  padding-bottom: 115px;
+  .tickets-list {
+    margin-top: 40px;
+  }
+  .ticket-item {
+    background-color: #fff;
+    list-style: none;
+    color: #b1b1b1;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #b1b1b1;
+    position: relative;
+    .sold-out {
+      background-color: #f44336;
+      margin-left: 15px;
+      color: #fff;
+      padding: 0 8px;
+      line-height: 22.5px;
+      display: inline-block;
+    }
+    .quantity {
+      background-color: #333;
+      display: inline-block;
+      padding: 0 8px;
+      border-radius: 50%;
+      color: #fff;
+      float: right;
+      text-align: center;
+      margin-right: 16px;
+    }
+  }
+
+  .places-list {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .place {
+    &-item {
+      width: calc(100% / 3 - 12px);
+    }
+    &-image {
+      overflow: hidden;
+      position: relative;
+      transition: all 0.25s ease;
+      img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.25s ease;
+      }
+      &:hover img {
+        transition: all 0.25s ease;
+        transform: scale(1.4);
+      }
+
+      &:hover .place-image-layer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        transition: all 0.25s ease;
+      }
+    }
+
+    &-content {
+      background-color: #fff;
+      font-size: 15px;
+      padding: 15px 16px;
+    }
+    &-time {
+      color: #b1b1b1;
+      margin-top: 15px;
+    }
+    &-description {
+      margin-top: 15px;
+    }
+  }
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>The band</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="layer"></div>
+      <div class="model-popup">
+        <div class="model-top">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span>Tickets</span>
+          <div class="close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div class="model-content">
+          <div>
+            <label for="ticket-number"
+              ><i class="fa-solid fa-cart-arrow-down"></i
+              ><span>Tickets, $15 per person</span></label
+            >
+            <input type="text" id="ticket-number" placeholder="How many?" />
+          </div>
+          <div>
+            <label for="ticket-email">
+              <i class="fa-solid fa-user"></i><span>Send to</span></label
+            >
+            <input type="email" id="ticket-email" placeholder="Enter email" />
+          </div>
+          <button class="band-btn model-pay">
+            Pay<i class="fa-solid fa-check"></i>
+          </button>
+          <div class="model-bottom">
+            <div class="band-btn model-bottom-close">Close</div>
+            <div>Need <a href="#">help?</a></div>
+          </div>
+        </div>
+      </div>
+      <header class="header" id="header">
+        <ul class="header-menu">
+          <li class="header-item">
+            <a href="#" class="header-link home">Home</a>
+          </li>
+          <li class="header-item">
+            <a href="#about" class="header-link">Band</a>
+          </li>
+          <li class="header-item">
+            <a href="#tour" class="header-link">Tour</a>
+          </li>
+          <li class="header-item">
+            <a href="#contact" class="header-link">Contact</a>
+          </li>
+          <li class="header-item">
+            <a href="#" class="header-link"
+              >More
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <ul class="submenu">
+              <li class="submenu-item"><a href="#">Merchandise</a></li>
+              <li class="submenu-item"><a href="#">Extras</a></li>
+              <li class="submenu-item"><a href="#">Media</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="menu-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <!-- icon menu mobile -->
+        <nav class="navbar">
+          <!-- menu button -->
+          <div class="navbar-icons">
+            <div class="navbar-icon"></div>
+          </div>
+        </nav>
+      </header>
+      <section class="slider">
+        <div class="slider-content">
+          <h2 class="slider-heading">New York</h2>
+          <p class="slider-description">
+            Thank you, New York - A night we won't forget.
+          </p>
+        </div>
+      </section>
+      <section class="content">
+        <div class="about" id="about">
+          <div class="container">
+            <h2 class="band-heading">The band</h2>
+            <h3 class="band-subheading">We love music</h3>
+            <div class="about-description">
+              We have created a fictional band website. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="members-list">
+              <div class="member-item">
+                <h3 class="member-name">Alice</h3>
+                <img src="./assets/images/member1.avif" alt="member" />
+              </div>
+              <div class="member-item">
+                <h3 class="member-name">John</h3>
+                <img src="./assets/images/member2.avif" alt="member" />
+              </div>
+              <div class="member-item">
+                <h3 class="member-name">Tien</h3>
+                <img src="./assets/images/member3.avif" alt="member" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end about   -->
+        <div class="tour" id="tour">
+          <div class="container">
+            <h2 class="band-heading color-white">Tour dates</h2>
+            <h3 class="band-subheading">Remember to book your tickets!</h3>
+            <ul class="tickets-list">
+              <li class="ticket-item">
+                September<span class="sold-out">Sold out</span>
+              </li>
+              <li class="ticket-item">
+                October<span class="sold-out">Sold out</span>
+              </li>
+              <li class="ticket-item">
+                November <span class="quantity">3</span>
+              </li>
+            </ul>
+            <!-- places list -->
+            <div class="places-list">
+              <div class="place-item">
+                <div class="place-image">
+                  <img src="./assets/images/place1.avif" alt="place" />
+                  <div class="place-image-layer"></div>
+                </div>
+                <div class="place-content">
+                  <h3 class="place-name">New York</h3>
+                  <div class="place-time">Fri 27 Nov 2022</div>
+                  <div class="place-description">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </div>
+                  <div class="band-btn buy-ticket">Buy Tickets</div>
+                </div>
+              </div>
+              <div class="place-item">
+                <div class="place-image">
+                  <img src="./assets/images/place2.avif" alt="place" />
+                  <div class="place-image-layer"></div>
+                </div>
+                <div class="place-content">
+                  <h3 class="place-name">Paris</h3>
+                  <div class="place-time">Sat 28 Nov 2022</div>
+                  <div class="place-description">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </div>
+                  <div class="band-btn buy-ticket">Buy Tickets</div>
+                </div>
+              </div>
+              <div class="place-item">
+                <div class="place-image">
+                  <img src="./assets/images/place3.avif" alt="place" />
+                  <div class="place-image-layer"></div>
+                </div>
+                <div class="place-content">
+                  <h3 class="place-name">San Francisco</h3>
+                  <div class="place-time">Sun 29 Nov 2022</div>
+                  <div class="place-description">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </div>
+                  <div class="band-btn buy-ticket">Buy Tickets</div>
+                </div>
+              </div>
+            </div>
+            <!-- end places list -->
+          </div>
+        </div>
+        <!-- contact -->
+        <div class="contact" id="contact">
+          <div class="container">
+            <h2 class="band-heading">Contact</h2>
+            <h3 class="band-subheading">Fan? Drop a note!</h3>
+            <div class="contact-content">
+              <div class="contact-info">
+                <div class="contact-info-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Chicago, US
+                </div>
+                <div class="contact-info-phone">
+                  <i class="fa-solid fa-phone"></i>
+                  Phone: +83 911193
+                </div>
+                <div class="contact-info-mail">
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: tienco201@mail.com
+                </div>
+              </div>
+              <!-- end info-->
+              <div class="contact-form">
+                <form action="">
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="ip-name"
+                      required
+                      name="name"
+                    />
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      class="ip-email"
+                      required
+                      name="email"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Message"
+                    class="ip-message"
+                    required
+                    name="message"
+                  />
+                  <button type="submit" class="band-btn">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end contact-->
+        <section class="map">
+          <img src="./assets/images/map.jpg" alt="" />
+        </section>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <ul class="social">
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-snapchat-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+          <p>
+            Powered by
+            <a
+              href="https://www.facebook.com/profile.php?id=100013325043956"
+              target="_blank"
+              >Slelp</a
+            >
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

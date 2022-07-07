@@ -1,0 +1,45 @@
+.contact {
+  padding-bottom: 115px;
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  &-info,
+  &-form {
+    width: 50%;
+  }
+  &-info {
+    font-size: 18px;
+
+    i {
+      margin-right: 16px;
+      font-size: 15px;
+    }
+  }
+  &-form {
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .ip-name,
+    .ip-email {
+      width: calc(50% - 8px);
+    }
+    .ip-name,
+    .ip-email,
+    .ip-message {
+      padding: 8px;
+      border: 1px solid #ccc;
+    }
+    .ip-message {
+      width: 100%;
+      margin-top: 8px;
+    }
+    button {
+      text-transform: uppercase;
+      float: right;
+    }
+  }
+}

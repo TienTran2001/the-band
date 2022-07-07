@@ -1,0 +1,31 @@
+.footer {
+  padding: 70px 0 79px;
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 5px;
+    font-size: 24px;
+    li {
+      list-style: none;
+    }
+    a {
+      color: rgba(0, 0, 0, 0.6);
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #b1b1b1;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+    color: #b1b1b1;
+    a {
+      color: #b1b1b1;
+    }
+  }
+}

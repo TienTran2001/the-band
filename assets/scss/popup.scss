@@ -1,0 +1,134 @@
+.model {
+  &-popup {
+    // animation: popup 0.5s;
+    transition: all 0.3s linear;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    width: 900px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+  &-top {
+    position: relative;
+    background-color: #009688;
+    padding: 52px 0;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    & > i {
+      margin-right: 16px;
+    }
+    .close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: all 0.3s ease;
+      padding: 8px 16px;
+      font-size: 24px;
+      &:hover {
+        background-color: #ccc;
+        transition: all 0.3s ease;
+        color: #000;
+      }
+    }
+  }
+  // end top
+  // content
+  &-content {
+    background-color: #fff;
+    padding: 0 16px 16px;
+    & > div {
+      margin-bottom: 15px;
+    }
+    & > div > label {
+      display: block;
+      padding: 15px 0;
+      font-size: 15px;
+      margin-right: 5px;
+      i {
+        margin-right: 5px;
+      }
+    }
+    & > div > input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+    .model-pay {
+      background-color: #009688;
+      width: 100%;
+      text-transform: uppercase;
+      font-size: 15px;
+      padding: 16px;
+      i {
+        margin-left: 10px;
+        font-weight: bold;
+      }
+      &:hover {
+        background-color: #b1b1b1;
+      }
+    }
+  }
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+    &-close {
+      background-color: #f44366;
+    }
+  }
+}
+// .layer.active,
+// .model-popup.active {
+//   display: block;
+//   opacity: 1;
+// }
+.layer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9998;
+  opacity: 0;
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+.layer.active {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s linear;
+}
+.model-popup.active {
+  transition: all 0.3s linear;
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+}
+
+// @keyframes popup {
+//   from {
+//     opacity: 0;
+//     top: 0;
+//   }
+//   to {
+//     opacity: 1;
+//     top: 50%;
+//   }
+// }
+
+@media screen and (max-width: 1023px) {
+  .model-popup {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .model-popup {
+    width: 95%;
+  }
+}
