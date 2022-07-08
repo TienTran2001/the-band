@@ -55,6 +55,16 @@
     }
     .contact-form {
       margin-top: 30px;
+      div {
+        display: block;
+      }
+      .ip-name,
+      .ip-email {
+        width: 100%;
+      }
+      .ip-email {
+        margin-top: 8px;
+      }
     }
   }
 }
